@@ -1,0 +1,20 @@
+Authentification JWT(JSON WEB TOKEN)
+
+1. PRINCIPES 
+
+2. CHOIX DU BUNDLE ET INSTALLATION
+
+3. CREATION DE L'ENTITE USER, DE FUNCTION AJOUT ET DE LA LISTE DES UTILISATEURS
+
+4. CONFIGURATION DE JWT(CLE PUBLIQUE, PRIVÉE, DUREE DU TOKEN, DROIT D'ACCES)
+
+5. TESTS 
+
+
+
+
+Commandes:
+
+mkdir -p config/jwt
+openssl genrsa -out config/jwt/private.pem -aes256 4096
+openssl rsa -pubout -in config/jwt/private.pem -out config/jwt/public.pem
